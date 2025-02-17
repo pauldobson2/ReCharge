@@ -1,0 +1,46 @@
+.bg-image {
+    background-image: url('../images/partnerfeesimages/partnerfeebg.png');
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+}
+
+.banner-text h1 {
+    color: #fff;
+    width: 100%;
+}
+
+.banner-text p {
+    color: #fff;
+    width: 100%;
+    padding: 0px 180px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .bg-image {
+        height: 400px;
+    }
+    .banner-text {
+        height: 280px;
+    }
+    .banner-text h1 {
+        font-size: 32px;
+    }
+    .banner-text p {
+        padding: 0px 0px;
+        font-size: 16px;
+    }
+}

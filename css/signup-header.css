@@ -1,0 +1,83 @@
+.main-blue {
+    color: #32B1DA;
+}
+
+.navbar {
+    padding: 1rem 0rem;
+}
+
+.navbar .navbar-brand img {
+    width: 175px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff !important;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #32b1da !important;
+}
+
+.nav-item .nav-link .fa-user {
+    color: #fff;
+    font-size: 18px;
+}
+
+.nav-item .nav-link .fa-user:hover {
+    color: #32b1da;
+}
+
+.navbar-light .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+    line-height: 1.8;
+}
+
+.navbar-light .navbar-toggler:focus {
+    outline: none;
+}
+
+.bg-black-main {
+    background-color: #26272c;
+    width: 101%;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../images/menu.png") !Important;
+}
+
+.header {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-collapse {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .bg-black-main {
+        background-color: #26272c;
+        width: 120%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mrr {
+        margin-left: -1rem;
+    }
+    .navbar {
+        padding: 1rem 1rem;
+    }
+}

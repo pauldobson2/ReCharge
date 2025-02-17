@@ -1,0 +1,933 @@
+body {
+    background-color: #f9f9f9;
+}
+
+
+/** stepper  **/
+
+.pad-l {
+    padding-left: 3.2rem;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.blue-website-color {
+    color: #32B1DA;
+}
+
+.link-:hover {
+    color: #32B1DA;
+}
+
+.stepper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.signUpUl {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    margin: 0 auto 15px;
+}
+
+.signUpUl li {
+    list-style-type: none;
+    z-index: 1;
+    position: relative;
+    list-style-type: none;
+    color: rgb(35, 31, 32, .4);
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 20%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.signUpUl li::after {
+    content: "";
+    border-top: 2px solid rgba(35, 31, 32, 0.4);
+    position: absolute;
+    top: 15px;
+    left: 91px;
+    width: 58%;
+    z-index: 0;
+}
+
+.signUpUl li.active::after {
+    border-top: 2px solid #32B1DA;
+}
+
+.signUpUl li:last-child::after {
+    display: none !Important;
+}
+
+.signUpUl li .account-name {
+    font-size: 18px;
+    position: absolute;
+    top: 45px;
+    text-transform: initial;
+    /*font-family: 'qanelas-medium';*/
+    color: rgba(35, 31, 32, .9);
+    letter-spacing: .5px;
+}
+
+.signUpUl li .account-name.active {
+    color: #32B1DA;
+}
+
+.signUpUl li .count {
+    font-weight: 600;
+}
+
+span.cricle {
+    border: 2px solid rgb(35, 31, 32, .4);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+span.cricle.active {
+    background-color: #32B1DA;
+    color: #fff;
+    border: none;
+}
+
+span.cricle .count-1 {
+    display: none;
+}
+
+.tickmark {
+    margin-bottom: 3px;
+}
+
+.activeTickMark.d-none {
+    display: initial !important;
+}
+
+
+/* Placeholder */
+
+::-webkit-input-placeholder {
+    /* Edge */
+    color: rgb(35, 31, 32, .6) !important;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(35, 31, 32, .6) !important;
+}
+
+::placeholder {
+    color: rgb(35, 31, 32, .6) !important;
+}
+
+
+/* Placeholder */
+
+@media screen and (max-width: 1200px) {
+    .signUpUl li::after {
+        left: 77px;
+        width: 54%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .signUpUl li::after {
+        left: 75px;
+        width: 54%;
+    }
+    .signUpUl li .account-name {
+        font-size: 15px;
+    }
+    .heading-t {
+        font-size: 2rem;
+    }
+    .p-s {
+        font-size: 14px;
+    }
+    .stage-form-heading {
+        font-size: 1rem;
+    }
+    .roleBox-img img {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heading-t {
+        font-size: 1.5rem;
+    }
+    .p-s {
+        font-size: 14px;
+    }
+    .accType-boxes {
+        display: block !important;
+    }
+    .roleBox {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .signUpUl li::after {
+        left: 72px;
+        width: 52%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .signUpUl li::after {
+        left: 67px;
+        width: 53%;
+    }
+}
+
+@media screen and (max-width: 566px) {
+    .signUpUl li::after {
+        left: 77px;
+        width: 41%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .signUpUl li::after {
+        left: 75px;
+        width: 41%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .signUpUl li::after {
+        left: 70px;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .signUpUl li::after {
+        left: 65px;
+        width: 40%;
+    }
+    .signUpUl li .account-name {
+        font-size: 14px;
+        position: absolute;
+        top: 35px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .signUpUl li::after {
+        left: 63px;
+        width: 36%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .signUpUl li::after {
+        left: 58px;
+        width: 36%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .signUpUl li::after {
+        left: 55px;
+        width: 36%;
+    }
+}
+
+@media screen and (max-width: 381px) {
+    .signUpUl li::after {
+        left: 50px;
+        width: 36%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .signUpUl li::after {
+        left: 48px;
+        width: 34%;
+    }
+    .signUpUl li .account-name {
+        font-size: 12px;
+        position: absolute;
+        top: 35px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .signUpUl li::after {
+        left: 46px;
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .signUpUl li::after {
+        left: 42px;
+        width: 36%;
+        top: 10px;
+    }
+    .signUpUl li .account-name {
+        font-size: 10px;
+        position: absolute;
+        top: 30px;
+    }
+    span.cricle {
+        height: 20px;
+        width: 20px;
+        font-size: 12px;
+    }
+    .tickmark img {
+        width: 12px;
+    }
+}
+
+@media screen and (max-width: 316px) {
+    .signUpUl li::after {
+        left: 42px;
+        width: 35%;
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .signUpUl li::after {
+        left: 40px;
+        width: 35%;
+        top: 10px;
+    }
+}
+
+
+/** stepper  **/
+
+.roleBox {
+    border: 1px solid #D0D0D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.roleBox:hover {
+    border: 1px solid #32B1DA;
+    box-shadow: rgba(0, 177, 221, 0.1) 0px 8px 24px;
+}
+
+.roleBox:active {
+    border: 1px solid #32B1DA;
+    box-shadow: rgba(0, 177, 221, 0.1) 0px 8px 24px;
+}
+
+.roleBox-text {
+    margin-top: 22px;
+    /*font-family: 'qanelas-semi-bold';*/
+}
+
+.roleBox-text p {
+    font-size: 18px;
+}
+
+.roleBox-text .title-bg {
+    color: rgb(35, 31, 32, .6);
+}
+
+.roleBox * {
+    pointer-events: inherit;
+}
+
+.roleBox .active {
+    border: 1px solid #32B1DA;
+    box-shadow: rgba(0, 177, 221, 0.1) 0px 8px 24px;
+}
+
+.accType-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 30px;
+}
+
+.stage-form-heading {
+    color: rgba(35, 31, 32, .8);
+}
+
+.col-img {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 18px;
+    display: unset !important;
+    background-color: unset !important;
+    margin-bottom: 5px;
+    color: rgba(35, 31, 32, .8);
+    /*    font-family: 'qanelas-semi-bold';*/
+}
+
+.mt-5px {
+    margin-top: 5px !important;
+}
+
+.input {
+    width: 100%;
+    background-color: #F9F9F9;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border: 1px solid rgb(237, 236, 236, 0.7);
+    height: 50px;
+    /*font-family: 'qanelas-light';*/
+    letter-spacing: .5px;
+    color: rgb(35, 31, 32, .7);
+    font-size: 16px;
+    box-shadow: none;
+}
+
+.input:focus-visible {
+    outline: none;
+}
+
+.mt-15 {
+    margin-top: 2.5rem !important;
+}
+
+.invalid-danger {
+    COLOR: RED;
+    margin: 5px 2px;
+}
+
+
+/*checkbox*/
+
+.check-box {
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /*font-family: 'qanelas-regular';*/
+}
+
+.check-box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #D0D0D0;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.check-box:hover input~.checkmark {
+    background-color: #fff;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.check-box input:checked~.checkmark {
+    background-color: #fff;
+    border: 1px solid #32B1DA;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+
+/* Show the checkmark when checked */
+
+.check-box input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.check-box .checkmark:after {
+    left: 6px;
+    top: 2.5px;
+    width: 6px;
+    height: 10px;
+    border: solid #32B1DA;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/*checkbox*/
+
+.viewPasswordIcon {
+    position: absolute;
+    right: 10px;
+    top: 45px;
+}
+
+.form-shape {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+/*button*/
+
+.submit-button {
+    border-radius: 0 !important;
+    padding: 12px;
+    background-color: #32B1DA !important;
+    font-size: 18px;
+    /*font-family: 'qanelas-medium';*/
+    letter-spacing: 1px;
+    height: 50px;
+    border: 1px solid #32B1DA !important;
+    opacity: 1 !Important;
+    color: #fff;
+    width: 100%;
+}
+
+.submit-button:hover {
+    border-radius: 0 !important;
+    background-color: #fff !important;
+    border: 1px solid #32B1DA !important;
+    color: #32B1DA !important;
+}
+
+.submit-button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.button1 {
+    background-color: transparent !important;
+    border: 1px solid #D0D0D0!important;
+    color: #D0D0D0 !important;
+    height: 50px;
+    font-size: 18px;
+    padding: 12px;
+}
+
+.button1:hover {
+    background-color: #32B1DA !important;
+    border: 1px solid #32B1DA !important;
+    color: #fff !important;
+}
+
+.button1:focus {
+    outline: 0px;
+}
+
+.mll-3 {
+    margin-left: 1%;
+}
+
+.w-49 {
+    width: 49% !important;
+}
+
+
+/*button*/
+
+.signup-img-1 {
+    margin-top: 50px;
+    margin-left: -50px;
+}
+
+.signup-img {
+    margin-left: -50px;
+}
+
+.stage-height {
+    height: 300px;
+}
+
+.stage-height-350 {
+    height: 350px;
+}
+
+@media screen and (max-width: 1200px) {
+    .signup-img-1 {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    .signup-img {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .signup-img-1 {
+        margin-top: 50px;
+        margin-left: -30px;
+    }
+}
+
+.dot-z-indx {
+    z-index: -1;
+    bottom: 0;
+    left: -75px;
+}
+
+.signup-rectangle {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    padding-bottom: 75px;
+}
+
+@media screen and (max-width: 992px) {
+    .stages-full-width-2 {
+        display: none;
+    }
+    .stages-full-width-7 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .label {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .stages-full-width-7 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .stage-1-img {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .signup-img-1 {
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 50%;
+    }
+    .signup-img {
+        width: 50%;
+        margin-top: 20px;
+    }
+    .input {
+        height: 40px;
+        font-size: 13px;
+    }
+    .check-box {
+        font-size: 14px;
+    }
+    .submit-button {
+        height: 40px;
+        padding: 5px;
+    }
+    .w-49 {
+        width: 100% !important;
+    }
+    .mll-3 {
+        margin-left: 0;
+    }
+    .button1 {
+        height: 40px;
+        padding: 5px;
+    }
+    .margin-t {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .stages-full-width-7 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 95%;
+        max-width: 95%;
+        margin: auto;
+    }
+}
+
+
+/* custom dropdown */
+
+.custom-select-dropdown {
+    background-color: #F9F9F9;
+    border: 1px solid #EDECEC;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    width: 100%;
+    height: 50px;
+    padding: 0.65rem .7rem;
+    line-height: 2;
+    color: rgba(35, 31, 32, 0.35);
+    background-clip: padding-box;
+    box-shadow: none;
+    outline: none;
+    font-size: 14px;
+    -webkit-appearance: none;
+    -moz-appearance: window;
+    background-image: url('../images/down-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 98% center;
+    letter-spacing: .5px;
+    font-weight: 400;
+    /*font-family: 'qanelas-light';*/
+}
+
+.custom-select-dropdown::after {
+    font-size: 20px;
+}
+
+
+/* custom dropdown */
+
+.tab-content .tab-pane .tab-nav-link .active {
+    background-color: #32B1DA;
+}
+
+.field-icon {
+    float: right;
+    margin-right: 15px;
+    margin-top: -32px;
+    position: relative;
+    z-index: 2;
+}
+
+
+/*Tab css*/
+
+.nav-tabs .tab-nav-link {
+    border: 0px;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    padding: 15px;
+    color: rgba(35, 31, 32);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.nav-tabs .nav-item.show .tab-nav-link,
+.nav-tabs .tab-nav-link.active {
+    color: #fff;
+    background-color: #32B1DA;
+    border-color: 0px;
+}
+
+.nav-tabs .tab-nav-link:focus,
+.nav-tabs .tab-nav-link:hover {
+    color: #fff;
+    background-color: #32B1DA;
+    border-color: 0px;
+}
+
+.nav-tabs {
+    border-bottom: 0px;
+}
+
+
+/*Tab css*/
+
+.ud-inputs {
+    background-color: #F9F9F9;
+    border: 1px solid rgba(237, 236, 236, 0.7);
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 0.65rem 1rem;
+    font-size: 16px;
+    line-height: 2;
+    background-clip: padding-box;
+    box-shadow: none;
+    outline: none;
+    color: rgb(35, 31, 32, .6);
+    /*font-family: 'qanelas-light';*/
+}
+
+.p-relative {
+    position: relative;
+}
+
+.fa-image {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.small-note {
+    font-size: 12px;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.validation-btn {
+    right: 10px;
+    top: 65px;
+    background: transparent;
+    border: 0px;
+    color: #32B1DA;
+    font-weight: 500;
+}
+
+.validation-btn:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+@media screen and (max-width: 768px) {
+    .validation-btn {
+        right: 10px;
+        top: 58px;
+        font-size: 14px;
+    }
+    .ud-inputs {
+        height: 40px;
+        font-size: 13px;
+        padding: 0rem 1rem;
+    }
+}
+
+.bank-icon {
+    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bank-icon li {
+    list-style-type: none;
+    padding: 15px;
+    position: relative;
+}
+
+.bank-icon li img {
+    width: 80px;
+}
+
+.bank-icon li.active {
+    border: 1px solid #32B1DA;
+    border-radius: 4px;
+}
+
+.bank-icon li.active span.circle-1 {
+    display: initial !important;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    display: flex;
+    font-size: 16px;
+    background-color: #32B1DA;
+    position: absolute;
+    top: -9px;
+    right: -9px;
+}
+
+.bank-icon li.active span.circle-1 .tick-back {
+    width: 10px;
+    margin-left: 4px;
+    margin-top: -10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .bank-icon li {
+        padding: 10px;
+    }
+    .bank-icon li img {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .bank-icon li img {
+        width: 50px;
+    }
+    .submit-button {
+        font-size: 13px;
+    }
+    .button1 {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .bank-icon li img {
+        width: 40px;
+    }
+    .ud-inputs {
+        padding: 0rem 2rem 0rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 366px) {
+    .bank-icon {
+        display: block!important;
+    }
+    .bank-icon li {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    .bank-icon li img {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 313px) {
+    .submit-button {
+        font-size: 11px;
+    }
+    .button1 {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 287px) {
+    .submit-button {
+        height: 50px;
+    }
+    .button1 {
+        height: 50px;
+    }
+}

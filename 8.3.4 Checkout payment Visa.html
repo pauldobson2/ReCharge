@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/signup-header.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/checkout.css">
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <title>ReCharge-Checkout</title>
+</head>
+
+<body>
+    <!--header -->
+    <div class="container-fluid bg-black-main">
+        <div class="container">
+            <div class="row">
+                <header class="w-100">
+                    <nav class="navbar navbar-expand-lg navbar-light w-100">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <a class="navbar-brand" href="#"><img alt="Logo" src="images/recharge-logo.png" /></a>
+                            <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+                                <li class="nav-item active mr-4">
+                                    <a class="nav-link" routerLink="/authentication/signup/stage-2-personal">What we do?</a>
+                                </li>
+                                <li class="nav-item mr-4">
+                                    <a class="nav-link" routerLink="/authentication/signup/stage-3">About</a>
+                                </li>
+                                <li class="nav-item mr-4">
+                                    <a class="nav-link" routerLink="/authentication/signup/stage-4">Contact</a>
+                                </li>
+                                <li class="nav-item dropdown mr-4">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="images/pakistan.png" width="25px"> Pak
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item mrr">
+                                    <a class="nav-link" href="#"><i class="fa fa-user mr-3"></i>Log in/ Sign in</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
+    </div>
+    <!--header -->
+    <div class="container">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-7 stages-full-width-7">
+                    <div class="signup-content w-100 m-auto">
+                        <h1 class="text-center heading-t heading ">CHECKOUT</h1>
+                    </div>
+                    <div class="stepper mt-3">
+                        <ul class="signUpUl pl-0 mb-4">
+                            <li class="active">
+                                <span class="cricle active">
+                            <span class="count count-1">1</span>
+                                <span class="activeTickMark tickmark d-none">
+                                <img src="images/tick.png">
+                            </span>
+                                <span class="account-name active">Your Bills</span>
+                                </span>
+                            </li>
+                            <li class="active">
+                                <span class="cricle active ">
+                            <span class="count count-1">2</span>
+                                <span class="activeTickMark tickmark d-none ">
+                                <img src="images/tick.png">
+                            </span>
+                                <span class="account-name active ">Payment</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="cricle ">
+                                <span class="count ">3</span>
+                                <span class=" d-none">
+                                    <img src="images/tick.png">
+                                </span>
+                                <span class="account-name ">Confirmation</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 stages-full-width-2">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container  mt-5">
+        <div class="row">
+            <div class="col-md-12 col-lg-8 col-sm-12 px-0">
+                <div class="w-100 bg-white px-0 top-radius">
+                    <div class="row bg-white px-0 mx-0 top-radius">
+                        <div class="col-md-12 px-0">
+                            <table class="table check-table bg-white top-radius table-responsive-sm thead ">
+                                <thead>
+                                    <th class=" border-top-left-radius ">
+                                        BILL COMPANY
+                                    </th>
+                                    <th>CATEGORY</th>
+                                    <th>CONSUMER NO</th>
+                                    <th class="border-top-right-radius">PAYMENT</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="px-9">
+                                            <img src="images/checkout/1.png" class="ts-icon mr-2"> IESCO
+                                        </td>
+                                        <td class="py-9">Electricity</td>
+                                        <td class="py-9">324324234234</td>
+                                        <td class="py-9">1050.00 PKR <img src="images/checkout/cross.png" class="ml-3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-9">
+                                            <img src="images/checkout/2.png" class="ts-icon mr-2"> TELENOR
+                                        </td>
+                                        <td class="py-9">Mobile</td>
+                                        <td class="py-9">324324234234</td>
+                                        <td class="py-9">1050.00 PKR <img src="images/checkout/cross.png" class="ml-3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-9">
+                                            <img src="images/checkout/3.png" class="ts-icon mr-2"> Club M
+                                        </td>
+                                        <td class="py-9">Gym</td>
+                                        <td class="py-9">324324234234</td>
+                                        <td class="py-9">1050.00 PKR <img src="images/checkout/cross.png" class="ml-3"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row bg-white mt-4 b-radius p-3 mx-0">
+                        <div class="col-md-6">
+                            <h5>Rewards</h5>
+                            <div class="form-group mb-3">
+                                <select class="custom-select-dropdown form-control" id="planes">
+                        <option value="PIA">PIA</option>
+                        <option value="Emirates">Emirates</option>
+                        <option value="Air Blur">Air Blur</option>
+                        <option value="PIA">PIA</option>
+                    </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="text" name="memebership-name" placeholder="Enter memebership" class="ud-inputs ud-input02">
+                            </div>
+                        </div>
+                        <div class="col-md-6 pad-t">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5>Amount</h5>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="text-right">2800.00 PKR</h5>
+                                </div>
+                            </div>
+                            <div class="row py-1">
+                                <div class="col-6" style="font-size: 15px;">Amount excluding tax</div>
+                                <div class="col-6 text-right ">2800.00 PKR</div>
+                            </div>
+                            <div class="row py-1">
+                                <div class="col-6">GST 15.0%</div>
+                                <div class="col-6 text-right">150 PKR</div>
+                            </div>
+                            <div class="row py-1 border-bottom pb-3">
+                                <div class="col-6">Service fee</div>
+                                <div class="col-6 text-right">100.00 PKR</div>
+                            </div>
+                            <div class="row py-1 mt-3">
+                                <div class="col-6">
+                                    <h5>Total Payment</h5>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="text-right"> 3000.00 PKR</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-1 col-md-12 col-sm-12 col-gap">
+
+            </div>
+            <div class="col-md-12 col-lg-3 col-sm-12 bg-white">
+                <div class="row rounded bg-blue text-light pl-3 pt-3 pb-2 align-middle">
+                    <h5>PAYMENT SUMMARY</h5>
+
+                </div>
+                <div class="row rounded line ">
+                    <div class="col-8 w-100">
+                        <h5 class="mt-3"><img src="images/checkout/5.png" class="mr-1 " width="20px;">Electricity<br><span class="ml-4 text-muted" style="font-weight: lighter;">IESCO</span></h5>
+                    </div>
+                    <div class="col-4 w-100 mt-5">
+                        <p class="text-muted  w-100">1060PKR</p>
+                    </div>
+                </div>
+                <div class="row rounded line bg-white ">
+                    <div class="col-8 w-100">
+                        <h5 class="mt-3"><img src="images/checkout/6.png" class="mr-2" width="15px;">Mobile<br><span class="ml-4 text-muted" style="font-weight: lighter;">PTCL</span></h5>
+                    </div>
+                    <div class="col-4 w-100 mt-5">
+                        <p class="text-muted  w-100">2500PKR</p>
+                    </div>
+
+                </div>
+                <div class="row rounded line bg-white ">
+                    <div class="col-8 w-100">
+                        <h5 class="mt-2"><img src="images/checkout/7.png" class="mr-2" width="15px;">Gym<br><span class="ml-4 text-muted" style="font-weight: lighter;">Club M</span></h5>
+                    </div>
+                    <div class="col-4 w-100 mt-3">
+                        <p class="text-muted mt-3 w-100">5000PKR</p>
+                    </div>
+                </div>
+                <div class="row rounded line  bg-white ">
+                    <div class="col-8 mt-4 w-100">
+                        <h5 class=" text-muted" style="font-weight: lighter;">PIA</span>
+                        </h5>
+                    </div>
+                    <div class="col-4 mt-4  w-100 ">
+                        <p class="  w-100" style="font-weight: bolder;">089072</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row rounded  bg-white ">
+                    <div class="col-8 mt-3 w-100">
+                        <h5 class="text-muted">
+                            <h5>Total</h5>
+                            </span>
+                        </h5>
+                    </div>
+                    <div class="col-4  ">
+                        <p class="mt-4 w-100" style="font-weight: bolder;">8000PKR</p>
+                    </div>
+                    <hr>
+
+                </div>
+                <div class="row rounded  bg-white ml-2 align-middle">
+                    <div class="col-12 ml-5 mb-2 mt-2 ">
+                        <img src="images/checkout/8.png" width="21px;"> <a href="#" class="text-blue ml-1">Pay another bill</a>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    <div class="row row-gap">
+
+    </div>
+
+    <div class="container mb-5 ">
+        <div class="row">
+            <div class="col-md-12 col-lg-8 col-sm-12 px-0">
+                <div class="w-100 bg-white px-0 top-radius">
+                    <div class="row bg-white px-0 mx-0 top-radius">
+                        <div class="col-md-12  rounded bg-blue text-light pt-3 pb-2 pl-3 align-middle ">
+                            <h5>PREFERED PAYMENT METHOD</h5>
+                        </div>
+                    </div>
+                    <div class="row bg-white mt-2 b-radius  mx-0">
+                        <div class="col-md-12 col-sm-12">
+                            <p class="ml-5 text-muted">Select a different payment method for this transactions</p>
+                            <div class="row mx-0">
+                                <div class="col-12 w-100 align-middle">
+                                    <div class="top-content">
+                                        <div class="container-fluid">
+                                            <div id="carousel-example" class="carousel slide" data-ride="carousel" data-interval="false">
+                                                <div class="carousel-inner row w-100 mx-auto logo-list" role="listbox">
+                                                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 ">
+                                                        <a href="#!" class="logo-checked"><img src="images/autentication/master2.png" class="img-fluid mx-auto d-block logo-check-img" alt="img1"></a>
+                                                    </div>
+                                                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 ">
+                                                        <a href="#!" class="logo-checked"><img src="images/autentication/alipay2.png" class="img-fluid mx-auto d-block logo-check-img" alt="img1"></a>
+                                                    </div>
+                                                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                                                        <a href="#!" class="logo-checked"><img src="images/autentication/bank-transfer.png" class="img-fluid mx-auto d-block logo-check-img" alt="img2"> </a>
+                                                    </div>
+                                                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                                                        <a href="#!" class="logo-checked"><img src="images/autentication/unionpay2.png" class="img-fluid mx-auto d-block logo-check-img" alt="img3"></a>
+                                                    </div>
+                                                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                                                        <a href="#!" class="logo-checked"> <img src="images/autentication/visa2.png" class="img-fluid mx-auto d-block logo-check-img" alt="img4"></a>
+                                                    </div>
+                                                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                                                        <a href="#!" class="logo-checked"><img src="images/autentication/paypal.png" class="img-fluid mx-auto d-block logo-check-img" alt="img5"></a>
+                                                    </div>
+                                                    <!-- <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                                                        <img src="images/autentication/alipay.png" class="img-fluid mx-auto d-block" alt="img8">
+                                                    </div> -->
+                                                </div>
+                                                <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row mx-0 p-2">
+                                <div class="col-12 w-100">
+                                    <button type="submit" class="btn btn-outline-info  btn-lg btn-block btn-txt">+ Add a new payment method</button>
+                                    <br>
+                                    <button type="submit" class="btn btn-outline-info  btn-lg btn-block btn-txt">Pay without linking payment method to my account</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-lg-1 col-md-12 col-sm-12 col-gap">
+
+            </div>
+            <div class="col-md-12 col-lg-3 col-sm-12 bg-white">
+                <div class="row rounded bg-blue text-light pt-3 pb-2 pl-3 align-middle">
+                    <h5>RECEIPT TO</h5>
+
+                </div>
+                <form>
+                    <div class="form-group mt-1 mb-1">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="email " class="form-control ud-inputs" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Moheed Gillani">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Email</label>
+                        <input type="email" class="form-control ud-inputs" id="exampleInputPassword1" placeholder="info@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Mobile Number</label>
+                        <input type="text" class="form-control ud-inputs" id="exampleInputPassword1" placeholder="+92 341 4148482">
+                    </div>
+
+                </form>
+
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <div class="container mt-0">
+        <div class="row mt-0">
+            <div class="col-8 mt-0">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12">
+
+
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 mt-0">
+                        <div class="row  mb-5 ml-2">
+                            <div class="col-md-8 col-lg-8 col-sm-12">
+                                <button class="btn  btn-lg btn-block bg-blue text-light " style="border-radius: 0px;">Pay Now</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-1">
+
+            </div>
+            <div class="col-3">
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+    <!-- web footer -->
+
+    <div class="fluid-container px-0 py-5 mx-0 bg-footer">
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-md-8">
+                    <a href="#!">
+                        <img src="images/recharge-logo.png" class="footer-logo">
+                    </a>
+                    <p class="padright font-size-footer white-opicity">Bill paying and topping up services just got a lot<br>simpler for businesses and customers alike.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="white">
+                        <Span class="border-bt pb-2">ReC</Span>harge App</h3>
+                    <p class="font-size-footer mt-4 white-opicity">Download our app now.</p>
+                    <a href="#"><img src="images/homepage/google.png" alt="" class="f-img"></a>
+                    <a href="#"><img src="images/homepage/apple.png" alt="" class="f-img"></a>
+                    <a href="#"><img src="images/homepage/app-g.png" alt="" class="f-img"></a>
+                </div>
+            </div>
+            <div class="row mt-12">
+                <div class="col-md">
+                    <h5 class="white">
+                        <Span class="border-bt pb-2">Quic</Span>k Links</h5>
+                    <ul>
+                        <li><a href="#!">About Us</a></li>
+                        <li><a href="#!">What We Do</a></li>
+                        <li><a href="#!">Vouchers</a></li>
+                        <li><a href="#!">Latest News</a></li>
+                        <li><a href="#!">ReCharge Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h5 class="white">
+                        <Span class="border-bt pb-2">Help</Span>
+                    </h5>
+                    <ul>
+                        <li><a href="#!">Split a bill</a></li>
+                        <li><a href="#!">Offers</a></li>
+                        <li><a href="#!">Rewards</a></li>
+                        <li><a href="#!">Become a Partner</a></li>
+                        <li><a href="#!">Our Shop</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h5 class="white">
+                        <Span class="border-bt pb-2">Lega</Span>l</h5>
+                    <ul>
+                        <li><a href="#!">Help Centre</a></li>
+                        <li><a href="#!">Privacy Policy</a></li>
+                        <li><a href="#!">Terms & Condition</a></li>
+                        <li><a href="#!">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="white">
+                        <Span class="border-bt pb-2">Sign</Span> up for ReCharge Deals</h5>
+                    <p class="font-size-footer mt-4" class="white-opicity">Be first to discover the latest<br>discounts and deals.</p>
+                    <form>
+                        <div class="inputWithIcon">
+                            <input type="text" class="footerinput" placeholder="Email address">
+                            <img src="images/homepage/email.png" alt="">
+                        </div>
+                        <button class="footer-button mt-3">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-reserved">
+        <p class="text-center m-0">
+            &copy; ReCharge Pakistan (Private) Limited. Copyright 2022 © All rights reserved. <a href="#" class="white blue-website-color">Sitemap.</a>
+        </p>
+    </div>
+
+    <!-- web footer -->
+    <script>
+        /*
+         */
+        $('#carousel-example').on('slide.bs.carousel', function(e) {
+            /*
+                CC 2.0 License Iatek LLC 2018 - Attribution required
+            */
+            var $e = $(e.relatedTarget);
+            var idx = $e.index();
+            var itemsPerSlide = 5;
+            var totalItems = $('.carousel-item').length;
+
+            if (idx >= totalItems - (itemsPerSlide - 1)) {
+                var it = itemsPerSlide - (totalItems - idx);
+                for (var i = 0; i < it; i++) {
+                    // append slides to end
+                    if (e.direction == "left") {
+                        $('.carousel-item').eq(i).appendTo('.carousel-inner');
+                    } else {
+                        $('.carousel-item').eq(0).appendTo('.carousel-inner');
+                    }
+                }
+            }
+        });
+    </script>
+
+    <!-- show check mark js -->
+    <script type="text/javascript">
+        $('.logo-checked').on('click', function() {
+            $('.logo-checked').find('.logo-check-icon').remove();
+            $(this).append('<i class="fa fa-check-circle fa-lg logo-check-icon"></i>');
+            $(".carousel-item").find('.logo-check-img').removeClass('logo-list-selected');
+            $(this).parents(".carousel-item").find('.logo-check-img').addClass('logo-list-selected').css('opacity', '1.0');
+        });
+    </script>
+</body>
+
+</html>
